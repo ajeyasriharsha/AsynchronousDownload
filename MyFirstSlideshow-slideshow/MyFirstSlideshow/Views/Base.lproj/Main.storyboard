@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5TD-hX-gW6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ImageDownload-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ImageDownloadVC" customModule="MyFirstSlideshow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TTL-ar-tRm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yRz-jn-FXv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s5A-rF-ypE">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="254.5"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7lA-01-dc4">
+                                                <rect key="frame" x="0.0" y="255.5" width="375" height="15"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoQ-0f-xEK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIH-77-dnT">
+                                                        <rect key="frame" x="94" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-nN-sye">
+                                                        <rect key="frame" x="188" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwg-QA-uu7">
+                                                        <rect key="frame" x="282" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9c-M1-pX3">
+                                                <rect key="frame" x="0.0" y="271.5" width="375" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Download !"/>
+                                                <connections>
+                                                    <action selector="onFirstDownloadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zh-bz-vHl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="7lA-01-dc4" firstAttribute="height" secondItem="yRz-jn-FXv" secondAttribute="height" multiplier="0.05" id="BQ4-dC-bke"/>
+                                            <constraint firstItem="X9c-M1-pX3" firstAttribute="height" secondItem="yRz-jn-FXv" secondAttribute="height" multiplier="0.1" id="xew-NP-DJO"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NgF-Wm-D0d">
+                                        <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qKn-yr-pzL">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="254.5"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="exL-iV-soC">
+                                                <rect key="frame" x="0.0" y="255.5" width="375" height="15"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbd-Jb-ce2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKv-Fy-m9a">
+                                                        <rect key="frame" x="94" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbD-78-91L">
+                                                        <rect key="frame" x="188" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hp-Yo-LMA">
+                                                        <rect key="frame" x="282" y="0.0" width="93" height="15"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-Ws-c33">
+                                                <rect key="frame" x="0.0" y="271.5" width="375" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Download !"/>
+                                                <connections>
+                                                    <action selector="onSecondDownloadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tTh-jP-wgf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="exL-iV-soC" firstAttribute="height" secondItem="NgF-Wm-D0d" secondAttribute="height" multiplier="0.05" id="JJZ-fU-YNb"/>
+                                            <constraint firstItem="bjM-Ws-c33" firstAttribute="height" secondItem="NgF-Wm-D0d" secondAttribute="height" multiplier="0.1" id="ccp-vT-hKu"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TTL-ar-tRm" secondAttribute="trailing" id="6wx-Ah-dMQ"/>
+                            <constraint firstItem="TTL-ar-tRm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="NCn-bS-3kS"/>
+                            <constraint firstItem="TTL-ar-tRm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SO8-l3-di8"/>
+                            <constraint firstAttribute="bottom" secondItem="TTL-ar-tRm" secondAttribute="bottom" id="s0M-Ej-6Z6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ImageDownload" id="HMy-uV-UGo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="firstdownloadImageView" destination="s5A-rF-ypE" id="nF5-SO-bpQ"/>
+                        <outlet property="secondDownloadImageView" destination="qKn-yr-pzL" id="4ib-gU-hQC"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="hl7-Nv-aQY"/>
+                        <outletCollection property="topIndicator" destination="XoQ-0f-xEK" collectionClass="NSMutableArray" id="TO5-lj-u22"/>
+                        <outletCollection property="topIndicator" destination="uIH-77-dnT" collectionClass="NSMutableArray" id="YQc-7s-HzE"/>
+                        <outletCollection property="topIndicator" destination="Qmd-nN-sye" collectionClass="NSMutableArray" id="CGS-eQ-86h"/>
+                        <outletCollection property="topIndicator" destination="uwg-QA-uu7" collectionClass="NSMutableArray" id="Xzi-U2-ZjN"/>
+                        <outletCollection property="bottomIndicator" destination="xbd-Jb-ce2" collectionClass="NSMutableArray" id="5rF-eK-fIY"/>
+                        <outletCollection property="bottomIndicator" destination="PKv-Fy-m9a" collectionClass="NSMutableArray" id="Oyy-ms-FLH"/>
+                        <outletCollection property="bottomIndicator" destination="AbD-78-91L" collectionClass="NSMutableArray" id="g4X-45-Lvk"/>
+                        <outletCollection property="bottomIndicator" destination="9Hp-Yo-LMA" collectionClass="NSMutableArray" id="hvS-Hk-raM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MZF-ve-f6h"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s0K-xf-pTx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5TD-hX-gW6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L0B-Oa-64c">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lOd-Ud-Hil"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jti-AI-XKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
